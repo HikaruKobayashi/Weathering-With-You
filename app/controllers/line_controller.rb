@@ -38,6 +38,7 @@ class LineController < ApplicationController
           doc = REXML::Document.new(xml)
           xpath = 'weatherdata/forecast/time[1]/'
           nowWearther = doc.elements[xpath + 'symbol'].attributes['name']
+          p nowWearther
           nowTemp = doc.elements[xpath + 'temperature'].attributes['value']
           case nowWearther
           # 条件が一致した場合、メッセージを返す処理。絵文字も入れています。
