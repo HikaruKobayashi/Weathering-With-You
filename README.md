@@ -6,3 +6,4 @@
 - Heroku
 - Ruby on Rails
 - LINE API
+- OpenWeatherMap API
